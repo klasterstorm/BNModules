@@ -1,0 +1,6 @@
+framework module BNModules {
+  umbrella header "BNModules-umbrella.h"
+
+  export *
+  module * { export * }
+}

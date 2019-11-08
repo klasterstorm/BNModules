@@ -1,0 +1,16 @@
+PODS:
+  - BNModules (0.1.0)
+
+DEPENDENCIES:
+  - BNModules (from `../`)
+
+EXTERNAL SOURCES:
+  BNModules:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BNModules: e30f91e513631ccf9bae00a6114a48985842b3ab
+
+PODFILE CHECKSUM: f5a768224df9d980f6a7256c3a304087bb9aa01a
+
+COCOAPODS: 1.7.5
