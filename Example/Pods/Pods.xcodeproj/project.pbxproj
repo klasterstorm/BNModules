@@ -12,8 +12,16 @@
 		959AFE8226972C47F268F41263683D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A5742FFAACDC096538DB47356D08D9D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B67D1A9877F093A3D07CEA9002A07218 /* BNModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CA067A5545C5857A236907BCD0665B /* BNModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C46D04CA633C4B30A6E0CB0B5270882B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8B4BD8C0FB0BAC1029A16660B65948 /* ReplaceMe.swift */; };
 		CFA8A732FB5A7F0737DCA7D41388F1C2 /* Pods-BNModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4113CF670A6F5B8FCED44D6748FE770 /* Pods-BNModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D557BF6B2375514A0098EBC3 /* BNSliderUrlEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF5D2375514A0098EBC3 /* BNSliderUrlEntity.swift */; };
+		D557BF6C2375514A0098EBC3 /* BNSliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF5E2375514A0098EBC3 /* BNSliderController.swift */; };
+		D557BF6D2375514A0098EBC3 /* BN_ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF602375514A0098EBC3 /* BN_ImageLoader.swift */; };
+		D557BF6E2375514A0098EBC3 /* BNErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF632375514A0098EBC3 /* BNErrorView.swift */; };
+		D557BF6F2375514A0098EBC3 /* BNErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D557BF642375514A0098EBC3 /* BNErrorView.xib */; };
+		D557BF702375514A0098EBC3 /* BNErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF652375514A0098EBC3 /* BNErrorController.swift */; };
+		D557BF712375514A0098EBC3 /* BNButtonPlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D557BF682375514A0098EBC3 /* BNButtonPlaceholderView.xib */; };
+		D557BF722375514A0098EBC3 /* BNButtonPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF692375514A0098EBC3 /* BNButtonPlaceholderView.swift */; };
+		D557BF732375514A0098EBC3 /* BNPlaceholderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557BF6A2375514A0098EBC3 /* BNPlaceholderManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EE177A7976B9678A29CAF6941DA03E1 /* BNModules.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BNModules.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0F8B4BD8C0FB0BAC1029A16660B65948 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = BNModules/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		0EE177A7976B9678A29CAF6941DA03E1 /* BNModules.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BNModules.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		262FC47104D72ECB1FEB81A20EA4ED00 /* Pods-BNModules_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BNModules_Tests-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		34D5F19A916D29037D6B78586AE3E70C /* Pods-BNModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BNModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -38,15 +45,24 @@
 		5C71F344395F8158257AB0BA13894F77 /* BNModules.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BNModules.modulemap; sourceTree = "<group>"; };
 		5E52C1C4D8A28A56F4B47210A4A58538 /* BNModules-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BNModules-Info.plist"; sourceTree = "<group>"; };
 		88301FDCD40CB68559AE958F7EF40E89 /* Pods-BNModules_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BNModules_Tests-dummy.m"; sourceTree = "<group>"; };
-		898C5F5CD5234D0BD151F6B213D26C23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		898C5F5CD5234D0BD151F6B213D26C23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		987262D07CB472EB5F8260D01F35A95E /* BNModules.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BNModules.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC6837AAC1B2AB48C672A6192389DC75 /* Pods-BNModules_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BNModules_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AEBDC57EDBB40381FFE6792600AB4B9A /* Pods-BNModules_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BNModules_Tests.modulemap"; sourceTree = "<group>"; };
 		C4113CF670A6F5B8FCED44D6748FE770 /* Pods-BNModules_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BNModules_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C490A7C5AB9F08923549386C27319C1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CB9BAE202D80A0FAB4D2CA75F7808315 /* BNModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BNModules.framework; path = BNModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0F97DBD3111E63A0EB1B835D6E7338C /* Pods_BNModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BNModules_Tests.framework; path = "Pods-BNModules_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C490A7C5AB9F08923549386C27319C1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CB9BAE202D80A0FAB4D2CA75F7808315 /* BNModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BNModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F97DBD3111E63A0EB1B835D6E7338C /* Pods_BNModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D557BF5D2375514A0098EBC3 /* BNSliderUrlEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNSliderUrlEntity.swift; sourceTree = "<group>"; };
+		D557BF5E2375514A0098EBC3 /* BNSliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNSliderController.swift; sourceTree = "<group>"; };
+		D557BF602375514A0098EBC3 /* BN_ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BN_ImageLoader.swift; sourceTree = "<group>"; };
+		D557BF632375514A0098EBC3 /* BNErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNErrorView.swift; sourceTree = "<group>"; };
+		D557BF642375514A0098EBC3 /* BNErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNErrorView.xib; sourceTree = "<group>"; };
+		D557BF652375514A0098EBC3 /* BNErrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNErrorController.swift; sourceTree = "<group>"; };
+		D557BF682375514A0098EBC3 /* BNButtonPlaceholderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNButtonPlaceholderView.xib; sourceTree = "<group>"; };
+		D557BF692375514A0098EBC3 /* BNButtonPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButtonPlaceholderView.swift; sourceTree = "<group>"; };
+		D557BF6A2375514A0098EBC3 /* BNPlaceholderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNPlaceholderManager.swift; sourceTree = "<group>"; };
 		DC87981AD68B2511BB1CDF631E0C061C /* BNModules-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BNModules-dummy.m"; sourceTree = "<group>"; };
 		E62F3F2822474E15C31B040795AF6205 /* BNModules-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BNModules-prefix.pch"; sourceTree = "<group>"; };
 		E9754425CE81A4E8BDCE1075F5D46AC6 /* Pods-BNModules_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BNModules_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -97,7 +113,6 @@
 		433AF1E9B892EED1C42063B7251708CA /* BNModules */ = {
 			isa = PBXGroup;
 			children = (
-				0F8B4BD8C0FB0BAC1029A16660B65948 /* ReplaceMe.swift */,
 				859DCBE83D7B6DBAE87D4A66C41B597B /* Pod */,
 				2F4CF01F9AF5BABE82A5C695F55E0F0F /* Support Files */,
 			);
@@ -125,6 +140,7 @@
 		859DCBE83D7B6DBAE87D4A66C41B597B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				D557BF5B237551190098EBC3 /* Classes */,
 				0EE177A7976B9678A29CAF6941DA03E1 /* BNModules.podspec */,
 				C490A7C5AB9F08923549386C27319C1C /* LICENSE */,
 				898C5F5CD5234D0BD151F6B213D26C23 /* README.md */,
@@ -174,6 +190,74 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D557BF5B237551190098EBC3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF662375514A0098EBC3 /* BNButtonPlaceholder */,
+				D557BF5F2375514A0098EBC3 /* BNImageLoader */,
+				D557BF5C2375514A0098EBC3 /* BNSliderController */,
+				D557BF612375514A0098EBC3 /* BNErrorController */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D557BF5C2375514A0098EBC3 /* BNSliderController */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF5D2375514A0098EBC3 /* BNSliderUrlEntity.swift */,
+				D557BF5E2375514A0098EBC3 /* BNSliderController.swift */,
+			);
+			name = BNSliderController;
+			path = "../vlp-ios/vlp-ios/Customs/BNCustoms/BNSliderController";
+			sourceTree = "<group>";
+		};
+		D557BF5F2375514A0098EBC3 /* BNImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF602375514A0098EBC3 /* BN_ImageLoader.swift */,
+			);
+			name = BNImageLoader;
+			path = "../vlp-ios/vlp-ios/Customs/BNCustoms/BNImageLoader";
+			sourceTree = "<group>";
+		};
+		D557BF612375514A0098EBC3 /* BNErrorController */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF622375514A0098EBC3 /* BNErrorView */,
+				D557BF652375514A0098EBC3 /* BNErrorController.swift */,
+			);
+			name = BNErrorController;
+			path = "../vlp-ios/vlp-ios/Customs/BNCustoms/BNErrorController";
+			sourceTree = "<group>";
+		};
+		D557BF622375514A0098EBC3 /* BNErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF632375514A0098EBC3 /* BNErrorView.swift */,
+				D557BF642375514A0098EBC3 /* BNErrorView.xib */,
+			);
+			path = BNErrorView;
+			sourceTree = "<group>";
+		};
+		D557BF662375514A0098EBC3 /* BNButtonPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF672375514A0098EBC3 /* PlaceholderView */,
+				D557BF6A2375514A0098EBC3 /* BNPlaceholderManager.swift */,
+			);
+			name = BNButtonPlaceholder;
+			path = "../vlp-ios/vlp-ios/Customs/BNCustoms/BNButtonPlaceholder";
+			sourceTree = "<group>";
+		};
+		D557BF672375514A0098EBC3 /* PlaceholderView */ = {
+			isa = PBXGroup;
+			children = (
+				D557BF682375514A0098EBC3 /* BNButtonPlaceholderView.xib */,
+				D557BF692375514A0098EBC3 /* BNButtonPlaceholderView.swift */,
+			);
+			path = PlaceholderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +351,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D557BF712375514A0098EBC3 /* BNButtonPlaceholderView.xib in Resources */,
+				D557BF6F2375514A0098EBC3 /* BNErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +370,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D557BF6D2375514A0098EBC3 /* BN_ImageLoader.swift in Sources */,
 				72677BB0DEB915E15FCB03C3A0514630 /* BNModules-dummy.m in Sources */,
-				C46D04CA633C4B30A6E0CB0B5270882B /* ReplaceMe.swift in Sources */,
+				D557BF6B2375514A0098EBC3 /* BNSliderUrlEntity.swift in Sources */,
+				D557BF732375514A0098EBC3 /* BNPlaceholderManager.swift in Sources */,
+				D557BF6E2375514A0098EBC3 /* BNErrorView.swift in Sources */,
+				D557BF722375514A0098EBC3 /* BNButtonPlaceholderView.swift in Sources */,
+				D557BF702375514A0098EBC3 /* BNErrorController.swift in Sources */,
+				D557BF6C2375514A0098EBC3 /* BNSliderController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,8 +584,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
